@@ -30,12 +30,12 @@ import { EMAIL, DEV_CREDIT } from '../config';
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: 2px;
   text-align: left;
 }
 .email-link {
   font-family: serif;
-  font-size: clamp(1rem, 4.5vw, 1.5rem);
+  font-size: clamp(1rem, 4.5vw, 1.1rem);
   font-weight: 400;
   margin: 0;
   word-break: break-all;

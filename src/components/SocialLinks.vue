@@ -1,5 +1,4 @@
 <script setup>
-import { EMAIL } from '../config';
 
 const links = [
   { label: 'LinkedIn', href: 'http://www.linkedin.com/in/ayushdholakiya', icon: 'fi fi-brands-linkedin' },
@@ -28,7 +27,7 @@ const links = [
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 25px;
+  gap: 16px;
 }
 
 .social-links a {
@@ -49,7 +48,7 @@ const links = [
 
 .social-links i {
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   text-decoration: none;
 }
 </style>

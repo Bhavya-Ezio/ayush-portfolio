@@ -19,8 +19,15 @@ import ThemeToggle from './ThemeToggle.vue';
 }
 
 .brand-name {
-  font-family: serif;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+  font-family: 'Organetto Ultra Bold Ext', serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .brand-name {
+    font-size: 0.9rem;
+  }
 }
 </style>

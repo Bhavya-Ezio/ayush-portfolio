@@ -13,7 +13,7 @@ const openMail = () => {
       Full website coming soon
     </p>
 
-    <h1>
+    <h1 class="hero-title">
       Brand Strategy &<br />
       Visual Design
     </h1>
@@ -38,6 +38,10 @@ const openMail = () => {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.hero-title{
+  font-family: 'Neue Haas Display Med', serif;
 }
 
 .coming-soon {
