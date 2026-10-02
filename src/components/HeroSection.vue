@@ -73,7 +73,7 @@ const openMail = () => {
 
 h1 {
   font-family: serif;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2rem, 8vw, 4.5rem);
   line-height: 1.1;
   font-weight: 400;
   margin: 0;

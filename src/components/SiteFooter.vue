@@ -33,12 +33,12 @@ import { EMAIL, DEV_CREDIT } from '../config';
   gap: 15px;
   text-align: left;
 }
-
 .email-link {
   font-family: serif;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
   font-weight: 400;
   margin: 0;
+  word-break: break-all;
 }
 
 .email-link a {
@@ -64,6 +64,18 @@ import { EMAIL, DEV_CREDIT } from '../config';
 
 .email-link a:hover::after {
   transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+  .bottom-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .dev-by {
+    text-align: left;
+  }
 }
 
 .dev-by {

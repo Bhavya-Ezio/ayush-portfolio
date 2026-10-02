@@ -19,7 +19,7 @@ html {
   font-family: 'Inter', sans-serif;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
 }
 
 #app {
@@ -27,7 +27,7 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
 }
 
 .page-container {
@@ -52,4 +52,9 @@ html {
 .content-overlay button,
 .content-overlay a {
   pointer-events: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
