@@ -1,6 +1,12 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue';
 import { TresCanvas } from '@tresjs/core';
+import { computed } from 'vue';
+import { useTheme } from '../composables/useTheme';
+
+const { theme } = useTheme();
+const bgColor = computed(() => (theme.value === 'dark' ? '#000000' : '#ffffff'));
+const lineColor = computed(() => (theme.value === 'dark' ? '#ffffff' : '#000000'));
 
 const RING_COUNT = 32;
 const SPACING = 1.5;
@@ -66,9 +72,9 @@ onUnmounted(() => {
 
 <template>
   <div class="canvas-background">
-    <TresCanvas window-size>
+    <TresCanvas window-size :clear-color="bgColor">
       <TresPerspectiveCamera :position="[0, 0, 5]" :fov="75" />
-      <TresFogExp2 :color="'#000000'" :density="0.035" />
+      <TresFogExp2 :color="bgColor" :density="0.035" />
 
       <TresGroup>
         <TresLineLoop
@@ -78,7 +84,7 @@ onUnmounted(() => {
         >
           <TresBufferGeometry :position="[rectPoints, 3]" />
           <TresLineBasicMaterial
-            color="#ffffff"
+            :color="lineColor"
             :transparent="true"
             :opacity="0"
             :depth-write="false"
@@ -90,7 +96,7 @@ onUnmounted(() => {
         <TresLine v-for="(pts, n) in cornerLines" :key="n">
           <TresBufferGeometry :position="[pts, 3]" />
           <TresLineBasicMaterial
-            color="#ffffff"
+            :color="lineColor"
             :transparent="true"
             :opacity="0.25"
           />

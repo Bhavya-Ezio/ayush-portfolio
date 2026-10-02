@@ -1,10 +1,12 @@
 <script setup>
 import { NAME } from '../config';
+import ThemeToggle from './ThemeToggle.vue';
 </script>
 
 <template>
   <header class="top-info">
     <span class="brand-name">{{ NAME }}</span>
+    <ThemeToggle />
   </header>
 </template>
 
@@ -12,7 +14,7 @@ import { NAME } from '../config';
 .top-info {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 

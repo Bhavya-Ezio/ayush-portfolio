@@ -55,7 +55,7 @@ const openMail = () => {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--fg);
   animation: pulse 1.8s ease-in-out infinite;
 }
 
@@ -87,8 +87,8 @@ h1 {
 }
 
 .cta-button {
-  background: #ffffff;
-  color: #000000;
+  background: var(--fg);
+  color: var(--bg);
   border: none;
   padding: 12px 24px;
   border-radius: 30px;

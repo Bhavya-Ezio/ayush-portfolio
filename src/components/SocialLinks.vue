@@ -48,7 +48,7 @@ const links = [
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--fg);
   opacity: 0.6;
   transition:
     opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1),
